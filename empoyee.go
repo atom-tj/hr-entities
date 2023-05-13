@@ -12,8 +12,7 @@ type Employee struct {
 	FirstName  string  `json:"first_name"`  // Имя сотрудника
 	MiddleName *string `json:"middle_name"` // Отчество сотрудника (если имеется)
 
-	Department Department `json:"department"` // Подразделение, в котором работает сотрудник
+	DepartmentID uuid.UUID `json:"department_id"`
 
 	StartedAt time.Time `json:"started_at"` // Дата и время начала работы в компании
-
 }
